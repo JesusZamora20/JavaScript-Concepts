@@ -1,0 +1,11 @@
+{
+    "cadena": "jesus",
+    "numero": "21",
+    "boolean": "true",
+    "arreglo":["correr", "programar", "jugar"],
+    "object":{
+        "twitter":"@yisuscript",
+        "email":"jbermudeza@gmail.com"
+    },
+    "nulo":"null"
+}

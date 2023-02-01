@@ -1,6 +1,6 @@
 console.log("API Fetch with Async await");
 const $fetchAsync = document.getElementById("fetch-async");
-const $fragment = document.createDocumentFragment();
+const $fragmentAsync = document.createDocumentFragment();
 
 
 async function getData(){
@@ -14,10 +14,10 @@ async function getData(){
         json.forEach(el => {
             const $li = document.createElement("li");
             $li.innerHTML = `${el.name}--${el.email}--${el.phone}`;
-            $fragment.appendChild($li);
+            $fragmentAsync.appendChild($li);
         });
 
-        $fetchAsync.appendChild($fragment);
+        $fetchAsync.appendChild($fragmentAsync);
     } catch (err) {
         let msg = err.statusText || "An error has ocurred";
         $fetchAsync.innerHTML = `Error ${err.status}: ${msg}`;

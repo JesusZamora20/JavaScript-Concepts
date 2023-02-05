@@ -17,7 +17,7 @@
                 <input type="text" name="team" placeholder="team" required>
                 <br>
                 <input type="submit" value="send">
-                <input type="hidden" name="action">
+                <input type="hidden" name="id">
             </form>
         </article>
         <article>
@@ -37,14 +37,15 @@
     </section>
     <template id="crud-template">
         <tr>
-            <td class="name">Lionel Messi</td>
-            <td class="team">PSG</td>
+            <td class="name"></td>
+            <td class="team"></td>
             <td>
                 <button class="edit">Edit</button>
                 <button class="delete">Delete</button>
             </td>
         </tr>
     </template>
-    <script src="ajax.js"></script>
+    <script src="variables.js"></script>
+    <script src="fetch.js"></script>
 </body>
 </html>
